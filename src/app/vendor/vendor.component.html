@@ -1,0 +1,118 @@
+
+
+
+<button type="button" class="btn btn-secondary float-right btn3" routerLink="/vieworderdetail">ViewOrderDetails</button>
+
+<body> 
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Uid</th>
+        <th scope="col">Email</th>
+        <th scope="col">Furniture_Requested</th>
+        <th scope="col">Equipment_Requested</th>
+        <th scope="col">Shipping_Address</th>
+    
+        <th scope="col">Vendor_Action</th>
+     
+  
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let a of approvedrequests">
+        <th scope="row">{{a.uid}}</th>
+        <td>{{a.email}}</td>
+        <td>{{a.furnitureNeeded}}</td>
+        <td>{{a.equipmentNeeded}}</td>
+        <td>{{a.shippingAddress}}</td>
+        
+        
+       <td><button (click)="onEdit(a)" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">SetDeliveryDate</button></td>
+
+      </tr>
+
+    </tbody>
+  </table>
+
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Delivery Date</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+
+
+            <form [formGroup]="formValue"  >
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Uid</label>
+                    <input type="text" class="form-control"  aria-describedby="emailHelp" formControlName="uid">
+              
+                  </div>
+
+
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control"  aria-describedby="emailHelp" formControlName="email" >
+            
+                </div>
+               
+
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Furniture Requested</label>
+                    <input type="text" class="form-control" formControlName="furnitureNeeded" >
+              
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Equipment Requested</label>
+                    <input type="text" class="form-control" formControlName="equipmentNeeded" >
+              
+                  </div>
+
+
+                  
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Shipping Address</label>
+                    <input type="text" class="form-control" formControlName="shippingAddress">
+              
+                  </div>
+
+
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Delivery Date:</label>
+                    <input type="date" class="form-control" formControlName="deliveryDate">
+              
+                  </div>
+                  
+              
+              </form>
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary"   id="cancel" data-dismiss="modal">Close</button>
+          <button type="button" (click)="onSubmit()" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

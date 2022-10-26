@@ -1,0 +1,36 @@
+
+<body >
+  
+<nav class="navbar navbar-expand-lg navbar-light navv">
+   
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ">
+        <li class="nav-item ">
+          <a class="nav-link" href="#" style="color:white" routerLink="/home1">HOME </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  style="color:white">SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  style="color:white">ABOUT</a>
+        </li>
+       
+          <li class="nav-item">
+            <a class="nav-link" style="color:white">CONTACT</a>
+          </li>
+       
+      </ul>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+
+    <button type="button"  *ngIf="!(this.hide.isLoggedIn())"    class="btn btn-primary float-left btn3" routerLink="/login">Login</button> &nbsp; &nbsp;
+    <button type="button"   *ngIf="!(this.hide.isLoggedIn())"  class="btn btn-primary float-left" routerLink="/register">Register</button> &nbsp; &nbsp;
+    <button (click)="Onlogout()"  *ngIf="this.hide.isLoggedIn()" type="button" class="btn btn-danger float-left" >Logout</button>
+ 
+  </nav>
+</body>
+

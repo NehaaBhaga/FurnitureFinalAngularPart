@@ -1,0 +1,31 @@
+body{
+    background-image: url('../../assets/images/home11.webp');
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+     /* height: 700px; */
+   
+    height:800px;
+}
+
+  
+
+   h1{
+
+   font-size: 50px;
+   font-family: sans-serif;
+   color:black;
+   position:relative;
+   left:260px;
+   top:100px;
+    /* border:2px black solid;  */
+   
+   background: linear-gradient(to right, #f6f1d3, #648880, #293f50); 
+    /* background-color: rgb(209, 209, 209); */
+   width: 1000px;
+    border-radius:10px; 
+   padding: 10px;
+
+
+  } 

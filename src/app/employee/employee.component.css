@@ -1,0 +1,74 @@
+.f{
+
+    width: 550px;
+    height: 640px;
+
+    position:relative;
+    left: 480px;
+    bottom: -50px;
+    font-size:x-large;
+    /* border: 2px black solid; */
+    border-radius: 5px;
+    padding: 50px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color:rgb(241, 236, 228);
+
+
+
+
+}
+
+.image{
+
+
+/* background-image: url('../../assets/images/deco.jpg'); */
+background-image: url('../../assets/images/regdet.webp');
+
+height:800px;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+
+
+
+}
+
+h4{
+
+    position: relative;
+    left:20px
+}
+
+.s{
+
+    position: relative;
+    left:170px;
+
+    width: 100px;
+
+}
+.btn2{
+
+    width: 155px;
+    height: 35px;
+margin-right: 50px;
+margin-top: 20px;
+
+
+} 
+
+.e{
+    width:200px;
+    height:30px;
+    border-radius: 5px;
+
+}
+
+
+
+
+
+
+

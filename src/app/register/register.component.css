@@ -1,0 +1,78 @@
+.f1{
+
+    width:510px;
+    height: fit-content;
+
+    position:relative;
+    left: 225px;
+    bottom: 2px;
+    top:20px;
+    /* margin-bottom: 200px; */
+    font-size: 13px;
+    font-family: sans-serif;
+  
+    /* background-color:#222; */
+    /* background-image: url('../../assets/images/reg2.avif');  */
+    
+
+    border: 2px white solid;
+
+    padding: 9px;
+    border-radius: 5px;
+
+
+  
+
+
+}
+
+/* body{
+
+background-color: cornflowerblue;
+background-image:linear-gradient(to right, #a517ba, #5f1782);
+height:925px; 
+/* background-size: cover; */
+/* background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; */
+
+    /* -webkit-background-size: cover;   
+    -moz-background-size: cover;   
+    -o-background-size: cover;   
+    background-size: cover; */
+/* } */
+
+
+
+.image{
+    background-image: url('../../assets/images/reg5.jpg');   
+    /* background-color:lavender; */
+    /* background-color: #E1E8EE; */
+    height:800px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .btn5{
+
+  position: relative;
+   left: 100px;
+   width:300px
+  }
+
+  h4{
+    position: relative;
+    left:165px
+  }
+
+  .r{
+    width:200px;
+    height: 30px;
+    border-radius: 5px;;
+  }  
+
+  
+
+
+

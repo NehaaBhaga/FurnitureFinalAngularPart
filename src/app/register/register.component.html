@@ -1,0 +1,91 @@
+<body class="image">
+  
+
+<form class="f1" [formGroup]="registrationForm" (ngSubmit)="Onregistration()">
+   
+
+   
+        <div class="form-group">
+           <b> <h4 style="color:white">Register Form</h4></b>
+        </div>
+            <div class="form-group">
+          
+            <label for="inputAddress2" style="color:white">User ID</label>
+            <input type="text" class="form-control"  placeholder="User ID"
+            name="uid" formControlName="uid" [(ngModel)]="registration.uid">
+      
+          <span *ngIf="uid?.invalid && uid?.touched"  style="color:red">This field is required</span>
+        </div>
+
+
+          <div class="form-group">
+        <label for="inputAddress" style="color:white">Email*</label>
+        <input type="email" class="form-control"  placeholder="Email"
+        name="email" formControlName="email" [(ngModel)]="registration.email">
+      </div>
+      <span *ngIf="email?.invalid && email?.touched"  style="color:red">Invalid Email</span>
+
+      <div class="form-group">
+        <label for="inputAddress2" style="color:white">Password*</label>
+        <input type="password" class="form-control"  placeholder="Password"
+        name="password" formControlName="password" [(ngModel)]="registration.password">
+      </div>
+      <span *ngIf="password?.invalid && password?.touched"  style="color:red">Password must be minimum of 8 characters</span>
+
+
+
+    <div class="form-group">
+      <label for="inputAddress" style="color:white">First Name</label>
+      <input type="text" class="form-control"  placeholder="First Name"
+      name="fname" formControlName="fname" [(ngModel)]="registration.firstName">
+    </div>
+    <span *ngIf="fname?.invalid && fname?.touched"  style="color:red">This field is required</span>
+
+    <div class="form-group">
+      <label for="inputAddress2" style="color:white">Last Name</label>
+      <input type="text" class="form-control" placeholder="Last Name"
+      name="lname" formControlName="lname" [(ngModel)]="registration.lastName">
+    </div>
+    <span *ngIf="lname?.invalid && lname?.touched"  style="color:red">This field is required</span>
+    
+      <div class="form-group ">
+        <label for="inputCity" style="color:white">Address</label>
+         <textarea rows="2" cols="30" class="form-control"  placeholder="Address"
+        name="address" formControlName="address" [(ngModel)]="registration.address"> </textarea>
+      </div>
+     
+      <span *ngIf="address?.invalid && address?.touched"  style="color:red">This field is required</span> <br> 
+
+
+
+
+      <label class="role" for="role" style="color:white">Role:</label>    
+
+  <select class="r" name="role" id="role" formControlName="role" [(ngModel)]="registration.role"> 
+    <option value=""  >
+      -Select-
+  </option>
+  
+  <option value="Admin">Admin</option>
+  <option value="Employee">Employee</option>
+  <option value="Vendor">Vendor</option> 
+ 
+     </select> <br>  <br>
+
+
+
+
+    
+
+ 
+
+  
+   
+    <button type="submit" class="btn btn-primary btn5" >Register</button>
+
+&nbsp; &nbsp; <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+    <a routerLink="/login" class="btn5" >Already registered? Click to Login!!</a>
+
+  </form>
+</body>

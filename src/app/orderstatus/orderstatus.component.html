@@ -1,0 +1,33 @@
+<body>
+    <b><a  class="btn2 float-right" routerLink="/employee">⬅️Back</a></b> 
+  
+  
+  <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Uid</th>
+          <th scope="col">Email</th>
+          <th scope="col">Furniture_Requested</th>
+          <th scope="col">Equipment_Requested</th>
+          <th scope="col">Shipping_Address</th>
+          <th scope="col">Delivery_Date</th>
+       
+    
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let od of orderdetail">
+          <th scope="row">{{od.uid}}</th>
+          <td>{{od.email}}</td>
+          <td>{{od.furnitureNeeded}}</td>
+          <td>{{od.equipmentNeeded}}</td>
+          <td>{{od.shippingAddress}}</td>
+          <td>{{od.deliveryDate}}</td>
+          
+         
+  
+        </tr>
+  
+      </tbody>
+    </table>
+  </body>

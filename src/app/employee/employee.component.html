@@ -1,0 +1,90 @@
+
+<body class="image">
+
+  <button type="button" class="btn btn-primary float-right btn2" routerLink="/orderstatus">OrderStatus</button>
+  
+
+<form class="f" [formGroup]="orderRequestForm" (ngSubmit)="Onviewrequest()" >
+    <div class="form-group">
+       <b><h4>Furniture and IT Equipment request</h4></b> 
+       <br>
+      <label for="exampleInputEmail1">Employee ID*</label>
+      <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Employee ID"
+    
+      name="uid" formControlName="uid" [(ngModel)]="orderrequest.uid"
+     >
+     
+ 
+    </div>
+
+
+
+     <div class="form-group">
+      
+      <label for="exampleInputEmail1">Email*</label>
+      <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter Email"
+  
+      name="email" formControlName="email" [(ngModel)]="orderrequest.email"
+      >
+
+      </div>
+
+
+
+     
+   
+    <label for="furniture">Furniture Needed:</label>&nbsp; &nbsp; &nbsp; &nbsp; 
+
+<select class="e" name="furniture" id="furniture"  formControlName="furniture" [(ngModel)]="orderrequest.furnitureNeeded" >
+  <option value=""  >
+    -Select-
+</option>
+  <option value="Chair">Chair</option>
+  <option value="Table">Table</option>
+  <option value="Desk">Desk</option>
+  <option value="Sofa">Sofa</option>
+  <option value="Bookcase">Bookcase</option>
+
+ 
+</select> <br>   <br>
+
+
+<label for="equipment">IT Equipment Needed: &nbsp;</label>
+
+<select class="e" name="equipment" id="equipment" formControlName="equipment" [(ngModel)]="orderrequest.equipmentNeeded">
+  <option value=""  >
+    -Select-
+</option>
+  <option value="Monitor">Monitor</option>
+  <option value="Mouse">Mouse</option>
+  <option value="Keyboard">Keyboard</option>
+  <option value="Laptop">Laptop</option>
+  <option value="Headphone">Headphone</option>
+ 
+</select> <br>   <br>
+
+
+<div class="form-group">
+      
+    <label for="exampleInputEmail1">Shipping Address</label>
+    <textarea rows="2" cols="30" type="address" class="form-control" aria-describedby="emailHelp" placeholder="Address"
+    name="address" formControlName="address" [(ngModel)]="orderrequest.shippingAddress"
+    
+    > </textarea>
+
+    </div> 
+
+    <div>
+      <!-- <span style="color:red">{{this.var}}</span> -->
+      <span style="color:green">{{this.var1}}</span>
+    </div> 
+    
+
+    <button  type="submit" class="btn btn-primary s"  >Submit</button>
+   
+  
+
+  </form>
+</body>
+
+

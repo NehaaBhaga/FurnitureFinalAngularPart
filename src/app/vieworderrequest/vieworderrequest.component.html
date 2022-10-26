@@ -1,0 +1,48 @@
+<body>
+ <b><a  class="btn2 float-right" routerLink="/admin">⬅️Back</a></b> 
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Employee_Id</th>
+        <th scope="col">Email</th>
+        <th scope="col">Furniture_Requested</th>
+        <th scope="col">Equipment_Requested</th>
+        <th scope="col">Shipping_Address</th>
+      
+      
+        <th scope="col">Admin_Action</th>
+  
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let o of orderrequests">
+        <th scope="row">{{o.uid}}</th>
+        <td>{{o.email}}</td>
+        <td>{{o.furnitureNeeded}}</td>
+        <td>{{o.equipmentNeeded}}</td>
+        <td>{{o.shippingAddress}}</td>
+
+
+   
+
+        
+       <td> <button (click)="approve(o)"    type="button" class="btn btn-success">Approve </button> &nbsp; &nbsp; 
+        <button type="button"  (click)="delete(o.uid)" class="btn btn-danger">Reject</button>       </td>
+    
+      </tr>
+
+    </tbody>
+  </table>
+</body>
+
+
+  
+
+
+
+
+
+
+
+

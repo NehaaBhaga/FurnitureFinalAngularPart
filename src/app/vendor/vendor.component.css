@@ -1,0 +1,45 @@
+body{
+    background-image: url('../../assets/images/regdet.webp');
+height:800px;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.table{
+
+    width:1200px;
+    height: fit-content;
+
+    position:relative;
+    left: 145px;
+    bottom: -100px;
+    font-size: larger;
+  
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+
+
+}
+thead{
+
+    background-color:lightblue;
+
+}
+tbody{
+
+    background-color: #f3f3f3;
+}
+
+
+
+.btn3{
+
+    width: 155px;
+    height: 35px;
+margin-right: 50px;
+margin-top: 20px;
+
+
+} 

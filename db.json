@@ -1,0 +1,72 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signupUsers": [
+    {
+      "email": "nehabhagavathi77@gmail.com",
+      "password": "nehabhagavathi77@gmail.com",
+      "fname": "Neha",
+      "lname": "Bhagavathi",
+      "address": "Bangalore",
+      "id": 1
+    },
+    {
+      "email": "jim@gmail.com",
+      "password": "jim@gmail.com",
+      "fname": "Jim",
+      "lname": "Jim",
+      "address": "Scranton",
+      "id": 2
+    },
+    {
+      "email": "gulzar@gmail.com",
+      "password": "gulzar@gmail.com",
+      "fname": "Gulzar",
+      "lname": "Ahmed Khan",
+      "address": "Lucknow",
+      "id": 3
+    },
+    {
+      "email": "khan@gmail.com",
+      "password": "khan@gmail.com",
+      "fname": "Shah",
+      "lname": "Khan",
+      "address": "Mumbai",
+      "id": 4
+    },
+    {
+      "email": "zain@gmail.com",
+      "password": "zain@gmail.com",
+      "fname": "zain",
+      "lname": "p",
+      "address": "new york",
+      "id": 5
+    },
+    {
+      "uid": "105",
+      "email": "malik@gmail.com",
+      "password": "malik@gmail.com",
+      "fname": "malik",
+      "lname": "m",
+      "address": "london",
+      "id": 6
+    },
+    {
+      "uid": "500",
+      "email": "neha@gmail.com",
+      "password": "neha@gmail.com",
+      "fname": "Neha",
+      "lname": "Bhagavathi",
+      "address": "Bangalore",
+      "id": 7
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
